@@ -76,7 +76,7 @@ def get_or_create_subfund_id(subfund_name, fund_id, names_dict, subfund_type=Non
 
 database = "Symmetria"
 user = "postgres"
-password = "kukur123"
+password = ""
 host = "localhost"
 
 # Connect to the database
