@@ -19,14 +19,18 @@ CREATE TABLE subfund (
 
 CREATE TABLE funddata (
   id SERIAL PRIMARY KEY,
-  value NUMERIC NOT NULL,
   fund_id INTEGER NULL REFERENCES fund (fund_id),
   subfund_id INTEGER NULL REFERENCES subfund(subfund_id),
-  attribute1 TEXT NOT NULL,
-  attribute2 TEXT NULL,
-  attribute3 TEXT NULL,
-  attribute4 TEXT NULL,
-  attribute5 TEXT NULL,
+  policy_type NULL,
+  category NULL,
+  benchmark NULL,
+  expected_ret NULL,
+  
+  volatility NULL,
+  policy_target NULL,
+  lowerbound NULL,
+  upperbound NULL,
+  actual NULL,
   date TIMESTAMP NULL
 );
 
